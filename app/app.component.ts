@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavbarComponent } from './navbar.component';
 
 import { ROUTER_DIRECTIVES } from '@angular/router';
 
@@ -13,6 +14,6 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
   selector: 'my-app',
   // template: '<h1>My First Angular 2 App</h1><profile></profile>',
   templateUrl: 'app.component.html',
-     directives: [ROUTER_DIRECTIVES]
+  directives: [NavbarComponent, ROUTER_DIRECTIVES]
 })
 export class AppComponent  { name = 'Angular'; }
